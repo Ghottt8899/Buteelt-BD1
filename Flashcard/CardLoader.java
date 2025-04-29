@@ -1,4 +1,4 @@
-package cli;
+package Flashcard;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

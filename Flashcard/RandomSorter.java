@@ -1,4 +1,4 @@
-package cli;
+package Flashcard;
 
 import java.util.ArrayList;
 import java.util.Collections;

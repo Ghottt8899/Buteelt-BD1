@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Project Information -->
+    <groupId>com.example</groupId>
+    <artifactId>biy-daalt</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <!-- Project Name and Description -->
+    <name>Biy Daalt Project</name>
+    <description>A Maven project for the biy daalt task</description>
+
+    <url>http://www.example.com</url>
+
+    <dependencies>
+        <!-- Add any dependencies you need here -->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Maven Site Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.9.1</version> <!-- Ensure this is up to date -->
+                <configuration>
+                    <siteDirectory>${project.build.directory}/site</siteDirectory>
+                </configuration>
+            </plugin>
+
+            <!-- Maven Exec Plugin to Run the Main Class -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>flashcards.FlashcardApp</mainClass> <!-- Ensure this is the correct package and class -->
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

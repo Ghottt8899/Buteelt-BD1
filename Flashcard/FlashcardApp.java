@@ -1,4 +1,4 @@
-package cli;
+package Flashcard;
 
 public class  FlashcardApp {
     public static void main(String[] args) {

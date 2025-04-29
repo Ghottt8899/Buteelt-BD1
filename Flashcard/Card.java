@@ -1,4 +1,4 @@
-package cli;
+package Flashcard;
 
 public class Card {
     private final String question;
